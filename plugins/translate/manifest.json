@@ -1,0 +1,13 @@
+{
+	"name": "Translate",
+	"content_scripts": [
+		{
+			"matches": ["http://*/*"],
+			"css": ["translate.css"],
+			"js": ["translate.js"]
+		}
+	],
+	"permissions": [
+		"http://*/"
+	]
+}

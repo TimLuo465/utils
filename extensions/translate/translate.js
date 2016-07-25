@@ -60,7 +60,7 @@
 		hideTranslate: function() {
 			var that = this,
 				ts = document.querySelector("#translate-yd"),
-				transEle = document.querySelector(".translate-content"),
+				transEle = document.querySelector(".translation"),
 				transContainer = document.querySelector(".translate-container");
 
 			if(!ts) return;
@@ -76,8 +76,8 @@
 				transEle = document.querySelector(".translation"),
 				transContainer = document.querySelector(".translate-container");
 
-			transEle.textContent = translation;
 			transContainer.style.display = "block";
+			transEle.textContent = translation;
 		}
 	}
 

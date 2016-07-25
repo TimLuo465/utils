@@ -1,7 +1,59 @@
-.container{
-	border: 1px solid blue;
-	position: absolute;
+@charset "utf-8";
+
+.translate-yd {
+    display: block;
+}
+
+.translate-container {
+	 position: absolute;
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 5px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 	z-index: 100;
     background-color: #fff;
     display: none;
+    font-size: 12px;
+}
+
+.translate-content {
+	padding: 5px 0px 5px 5px;
+}
+
+.tip em, .tip ins{
+	width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    border: 8px solid transparent;
+    border-style: dashed dashed solid dashed;
+}
+
+.tip {
+	width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: -16px;
+    left: 2px;
+}
+
+.tip em {
+	border-bottom-color: #d8d8d8;
+}
+
+.tip ins {
+    border-bottom-color: #fff;
+    top: 2px;
+}
+
+.translate-text {
+	color: #999;
+}
+
+.translate-text::after {
+	content: "译: ";
 }

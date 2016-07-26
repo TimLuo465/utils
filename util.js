@@ -74,4 +74,8 @@
         
         return obj;
     }
+
+    _u.isFragment = function(node)  {
+        return node && node.nodeType == 11;
+    }
 })();
